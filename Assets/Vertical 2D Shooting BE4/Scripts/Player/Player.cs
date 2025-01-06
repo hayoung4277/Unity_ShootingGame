@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed = 10f;
-    private int playerHeart;
     private bool isDead;
     private bool isLeft;
     private bool isRight;
@@ -14,23 +13,17 @@ public class Player : MonoBehaviour
     private float hitTime = 0;
     private float invincibilityTime = 0.5f;
 
-    //public AudioClip sfxDeath;
-
     private Animator animator;
     private Rigidbody2D rb;
     private Boss boss;
     private EnemySpawner spawner;
-    //private AudioSource audioSource;
 
     GameManager gm;
 
     private void Awake()
     {
-        enabled = true;
-
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        //audioSource = GetComponent<AudioSource>();
 
         var findGo = GameObject.FindWithTag("GameController");
         gm = findGo.GetComponent<GameManager>();
@@ -39,14 +32,13 @@ public class Player : MonoBehaviour
         spawner = findSpawner.GetComponent<EnemySpawner>();
 
         isDead = false;
-        playerHeart = 3;
     }
 
     private void Update()
     {
         hitTime += Time.deltaTime;
 
-        if (isDead && playerHeart == 0)
+        if (isDead)
             return;
 
         var h = Input.GetAxis("Horizontal");
@@ -98,8 +90,7 @@ public class Player : MonoBehaviour
     private void Dead()
     {
         animator.SetTrigger("Die");
-        //audioSource.PlayOneShot(sfxDeath);
-        this.enabled = false;
+        enabled = false;
 
         gm.OnPlayerDie();
     }
@@ -108,7 +99,7 @@ public class Player : MonoBehaviour
     {
         if (hitTime >= invincibilityTime)
         {
-            if (collision.CompareTag("Boss"))
+            if (collision.gameObject.tag == "Boss")
             {
                 OnDamage(boss.damage);
             }

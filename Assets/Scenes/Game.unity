@@ -154,10 +154,9 @@ MonoBehaviour:
   enemyAPrefab: {fileID: 701363601362521765, guid: 07e219cffacceb844bd92b82ab9fb5ea, type: 3}
   enemyBPrefab: {fileID: 6220231421677420641, guid: 511e5e29307a32042a9fb032f35b964a, type: 3}
   enemyCPrefab: {fileID: 7111424579319430779, guid: 5aa7b9adb373160429fbfb8aa36e4338, type: 3}
-  spawnPoints: []
-  spawnAInterval: 3
-  spawnBInterval: 4
-  spawnCInterval: 10
+  spawnAInterval: 4
+  spawnBInterval: 7
+  spawnCInterval: 15
   spawnXPos: 0
   damage: 20
 --- !u!4 &66257512
@@ -656,7 +655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 197, y: 128}
+  m_AnchoredPosition: {x: 492, y: 518}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &863156461
@@ -714,8 +713,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

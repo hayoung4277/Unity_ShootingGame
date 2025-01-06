@@ -197,6 +197,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
+  damage: 20
+  isDead: 0
 --- !u!114 &5960059807930654275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 4356554485895890380, guid: 01412e6dd5623ed4fb9e0b481e074aa1, type: 3}
-  bulletCount: 12
+  bulletCount: 20
   bulletSpeed: 3
   fiteRate: 1
   fireInterval: 10

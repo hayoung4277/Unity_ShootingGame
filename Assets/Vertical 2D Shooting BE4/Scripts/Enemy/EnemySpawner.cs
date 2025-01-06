@@ -1,18 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
-using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyAPrefab;       // 家券且 棱各 橇府普
-    public GameObject enemyBPrefab;       // 家券且 棱各 橇府普
+    public GameObject enemyAPrefab;
+    public GameObject enemyBPrefab;
     public GameObject enemyCPrefab;
-    // 家券且 棱各 橇府普
-    public Transform[] spawnPoints;
-    public float spawnAInterval = 2f;
-    public float spawnBInterval = 3f;
-    public float spawnCInterval = 5f;
+
+    public float spawnAInterval = 3f;
+    public float spawnBInterval = 4f;
+    public float spawnCInterval = 10f;
 
     public float spawnXPos;
 
@@ -20,7 +17,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-
         StartCoroutine(SpawnEnemiesA());
         StartCoroutine(SpawnEnemiesB());
         StartCoroutine(SpawnEnemiesC());
@@ -66,7 +62,7 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnEnemyB()
     {
         float spacing = 2f;
-        Vector3 startPosition = new Vector3(-spacing, 5, 0);
+        Vector3 startPosition = new Vector3(-spacing, 6, 0);
 
         for (int i = 0; i < 3; i++)
         {

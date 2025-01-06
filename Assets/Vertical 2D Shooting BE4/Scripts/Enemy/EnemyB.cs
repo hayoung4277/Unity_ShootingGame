@@ -71,7 +71,7 @@ public class EnemyB : Enemy
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bullet"))
+        if (collision.gameObject.tag == "Bullet")
         {
             if (!IsDead && hitTime > invincibilityTime)
             {

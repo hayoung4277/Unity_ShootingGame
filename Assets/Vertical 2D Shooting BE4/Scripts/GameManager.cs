@@ -13,23 +13,18 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverText;
     public GameObject clearText;
     public GameObject startText;
-    //private AudioSource audioSource;
     private Boss boss;
     private EnemySpawner spawner;
 
     public float spawnTime = 0f;
     private int spawnCount = 1;
 
-    private float pauseValue = 1f;
-
     public event System.Action onGameOver;
-    //public event System.Action bossDie;
 
     private void Awake()
     {
         gameOverText.SetActive(false);
         clearText.SetActive(false);
-        //audioSource = GetComponent<AudioSource>();
         var findGo = GameObject.FindWithTag("Boss");
         boss = findGo.GetComponent<Boss>();
 
@@ -41,7 +36,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        //audioSource.Play();
         isGameStart = false;
         isGameOver = false;
 
@@ -52,7 +46,6 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         gameOverText.SetActive(true);
         Time.timeScale = 0f;
-        //audioSource.enabled = false;
 
         onGameOver.Invoke();
     }

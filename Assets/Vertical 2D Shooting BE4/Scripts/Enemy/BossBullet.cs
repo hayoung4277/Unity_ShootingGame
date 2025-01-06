@@ -5,7 +5,6 @@ using UnityEngine;
 public class BossBullet : MonoBehaviour
 {
     private Player player;
-    //private float damage = 10f;
 
     private void Awake()
     {

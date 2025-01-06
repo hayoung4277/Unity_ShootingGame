@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6301085872198974452}
   - component: {fileID: 6941620934957992105}
-  - component: {fileID: 1233596935240662380}
+  - component: {fileID: 183756734589939421}
   m_Layer: 0
   m_Name: EnemyBulletSpawner1
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1233596935240662380
+--- !u!114 &183756734589939421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 240522930371627324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6131f5c480ca164599dec6b9df2cfcf, type: 3}
+  m_Script: {fileID: 11500000, guid: cc2b06d8ca5fde7478b021a797528f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 5428302295344964109, guid: cff027a71c1a82443b50cc9fd5fb6e21, type: 3}
@@ -111,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1605007576680300726}
   - component: {fileID: 1249296823825546318}
-  - component: {fileID: 4380700549654526575}
+  - component: {fileID: 8028656295571521530}
   m_Layer: 0
   m_Name: EnemyBulletSpawner
   m_TagString: Untagged
@@ -186,7 +186,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4380700549654526575
+--- !u!114 &8028656295571521530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6457498922479854352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6131f5c480ca164599dec6b9df2cfcf, type: 3}
+  m_Script: {fileID: 11500000, guid: cc2b06d8ca5fde7478b021a797528f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 5428302295344964109, guid: cff027a71c1a82443b50cc9fd5fb6e21, type: 3}
